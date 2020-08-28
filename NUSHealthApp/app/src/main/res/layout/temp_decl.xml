@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_temp_decl"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/condition"
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="150dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="Yes" />
+
+        <RadioButton
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="No" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/tempInput"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint=" Input temperature here"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/condition" />
+
+    <Button
+        android:id="@+id/tempReset"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:background="@drawable/small_btn_selector"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:text="Reset"
+        android:textAppearance="@style/SmallButton"
+        app:layout_constraintEnd_toStartOf="@+id/tempSubmit"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tempInput" />
+
+    <Button
+        android:id="@+id/tempSubmit"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:background="@drawable/small_btn_selector"
+        android:layout_marginEnd="50dp"
+        android:text="Submit"
+        android:textAppearance="@style/SmallButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tempReset" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
+        android:text="Additional\nConditions"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/condition"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/condition" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

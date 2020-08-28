@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3363F5</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorOrange">#FF8833</color>
+    <color name="colorOrangeTrans">#55FF8833</color>
+    <color name="colorPrimaryTrans">#553363F5</color>
+    <color name="colorTransparent">#003363F5</color>
+</resources>
